@@ -1,24 +1,6 @@
 # Project 1 – Excel Data Cleaning & Validation
      
-          Raw CSV
-             │
-             ▼
-    Data Quality Audit
-             │
-             ▼
-   Power Query Cleaning
-             │
-             ▼
-   Feature Engineering
-             │
-             ▼
-   Validation & QA
-             │
-             ▼
-   Analysis-Ready Dataset
-             │
-             ▼
-      Power BI Dashboard
+![Project Workflow](images/project-workflow.png)
 
 ## Overview
 
@@ -82,6 +64,8 @@ The audit examined:
 
 A reusable audit framework was created to compare raw and cleaned datasets and verify that transformations did not unintentionally alter business metrics.
 
+![Data Audit](images/data-audit-overview.png)
+
 ---
 
 ## Data Cleaning Process
@@ -100,6 +84,8 @@ Cleaning steps included:
 * Preserving negative revenue and profit values representing product returns
 * Preserving transactions with missing Customer IDs after determining these represented legitimate guest purchases rather than invalid records
 
+![Power Query](images/power-query-transformations.png)
+
 ---
 
 ## Feature Engineering
@@ -113,6 +99,8 @@ Additional analytical fields were created to improve reporting and downstream an
 * Invoice Year
 
 These derived fields simplify filtering, segmentation and reporting within Power BI.
+
+![Clean Dataset](images/cleaned-data-preview.png)
 
 ---
 
@@ -133,6 +121,8 @@ Validation checks included:
 * Customer classification validation
 
 This process confirmed that business-critical metrics were preserved while improving overall data quality.
+
+![Query Dependencies](images/query-dependencies.png)
 
 ---
 
@@ -219,3 +209,5 @@ The Excel workbook includes:
 This project established a repeatable Excel-based ETL and data validation framework that can be applied to future datasets. Rather than focusing solely on cleaning data, the project demonstrates an analytical approach to understanding business context, preserving valid transactions and validating that transformations maintain the integrity of key business metrics.
 
 The cleaned dataset produced here forms the foundation for **Project 2 – SQL Sales Analysis**, where the same data is transformed using SQL and visualised in Power BI.
+
+![Power BI Dashboard](images/powerbi-dashboard-preview.png)
